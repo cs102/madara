@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->
+
+</head>
+<body>
+	<div class = "header">
+		<div class ="width">
+		  <div class ="left">
+		    <span class="beta">Beta</span>
+		    <br/>
+		    <span class="logo-color">
+		    <%= link_to 'little bookmarks', root_path, :class => 'logo' %>
+		    </span>
+		</div>
+		<div class ="right menu">
+			<br/>
+			<%= link_to "Home",   '#' %>
+			<%= link_to "Help",   '#' %>
+			<%= link_to "Log In",   '#' %>
+		<%# if signed_in? %>
+		<br/>
+		<%#= link_to "home", home_path %>
+		<%#= link_to "Users", users_path %>
+		<%#= link_to "Settings", edit_user_path(current_user) %>
+		<%#= link_to "Profile", current_user %>
+		<%#= link_to "Log out", logout_path, method: "delete" %>
+		</div>
+		<%# else %>
+		<br/>
+		<%#= link_to "Login", login_path, :class => 'green' %>
+		<%# end %>
+	</div>
+
+	<div class="clear"></div>
+		<div class = "width content">
+		<br/>
+		<% flash.each do |key, value| %>
+		<div class="alert alert-<%= key %> close" data-dismiss="alert"><%= value %></div>
+		<br/>
+		<% end %>
+
+
+		<%= yield %>
+	</div>
+
+</body>
+</html>

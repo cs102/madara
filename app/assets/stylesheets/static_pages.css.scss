@@ -1,0 +1,402 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, p, ol, ul, td {
+  font-family: HelveticaNeue, Helvetica, Arial, FreeSans , Sans-serif;
+  font-size:   15px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table {
+  width: 800px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #b7c7cf;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+table a:link {
+    text-decoration: none;
+    color: #444 ;
+}
+
+table a:visited {
+    text-decoration: none;
+    color: #444 ;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table a:active {
+    text-decoration: underline;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bookmarks { width: 700px; margin-top: 10px; height: 20px;}
+.favicon { float: left;width: 20px; }
+.url{float: left; width: 400px;}
+.created_url {float: left; width: 120px;margin-left: 50px; }
+
+.delete_icon {
+  background-image: asset-url("delete.png");
+  background-repeat: no-repeat;
+  padding-left:20px;
+  padding-top: 1px;
+  border-radius:6px;
+  padding-right:5px;
+}
+
+.delete_icon:hover {
+  background-image: asset-url("delete_red.png");
+  background-repeat: no-repeat;
+  padding-left:20px;
+  padding-top: 1px;
+  border-radius:6px;
+  padding-right:5px;
+}
+
+.header {
+  width:100%;margin-top:0px;margin-bottom:0px;
+  height: 10px;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  
+  padding-bottom:45px;
+  margin-bottom:10px;
+  border-top: 4px solid #40403f;
+  /* color logo #d5dde6*/
+}
+
+.menu {
+  width: 360px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:link {
+  text-decoration: none;
+  padding: 2px 5px;  
+  color: #333;
+}
+
+.menu a:visited {
+  color: black;
+  padding: 2px 5px;
+  color: #333;
+}
+
+.menu a:hover {
+  color: rgb(65, 131, 196);
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding: 2px 5px;
+  text-decoration: none;
+ 
+}
+
+.beta{
+  background-color: #00a9d2;
+  padding: 2px 4px 3px;
+  font-size: 11.049999999999999px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+hr {border: 1px solid silver;}
+.left {
+  float:left;
+}
+
+.right {
+  float: right;
+}
+
+.register {
+  width: 360px;
+}
+
+.green {
+  *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444; /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.80); /* rgba supported */
+  *color: #444; /* IE 6 & 7 */
+  border: 1px solid #999; /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1em;
+  background: rgb(28, 184, 65);
+  border-radius: 4px 4px 4px 4px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.feature {
+  width: 550px;
+}
+.logo { 
+  font-size: 36px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #e51937;
+  font-weight: bold;
+}
+.logo-color a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-color a:link {
+  text-decoration: none;
+  padding: 2px 5px;  
+}
+
+.logo-color a:visited {
+  color: white;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+.width {
+  width:980px; margin: 0 auto;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+#a { color: #000; }
+#a:visited { color: #666; }
+#a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.todo {
+padding: 8px 35px 8px 14px;
+  background-color: #FCFC76;
+  border: 1px solid #F2F241;
+  border-radius:5px;
+  font-weight: bold;
+}
+
+.alert{
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  display: block;
+}
+
+.help-inline {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.field_with_errors {
+  margin-top: -6px;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.clear {
+  clear: both;
+}
+
+ul, li { list-style-type: none; }
+
+
+.button {
+  *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444; /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.80); /* rgba supported */
+  *color: #444; /* IE 6 & 7 */
+  border: 1px solid #999; /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+  background-color: rgb(0, 120, 231);
+
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1em;
+}
+
+.button:hover,
+.button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+  background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+  background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+  background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.create_account {
+  font-size: 1em;
+  text-align: center;
+  width: 180px;
+  font-weight: bold;
+}
+
+.login {
+  font-size: 1em;
+  text-align: center;
+  width: 100px;
+}
+
+/* start -> style pagination*/
+
+.pagination {
+  height: 20px;
+  margin-top: 15px;
+  margin-bottom:30px;
+  padding:3px 6px; 
+  font-weight: bold;
+  color: #2a4f6f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.pagination em {
+  color: white;
+  border: 1px solid #99A7BF;
+  padding:3px 6px;  
+  background-color: #B0C4DE;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.pagination a:hover {
+  color: white;
+  background-color:  #8FA1B7;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.pagination a, .pagination .previous_page {
+  background-color: #B0C4DE;
+  font-weight: bold;
+  padding:3px 6px;
+  border: 1px solid #B0C4DE;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.pagination .next_page {
+  background-color: #B0C4DE;
+  height: 20px;
+  display: inline;
+}
+
+.pagination .disabled {
+  background-color: #B0C4DE;
+  font-weight: bold;
+  padding:3px 6px;
+  border: 1px solid #B0C4DE;
+  border-radius: 5px;
+}
+
+/* end-> style pagination*/

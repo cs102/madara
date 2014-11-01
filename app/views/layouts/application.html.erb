@@ -24,9 +24,12 @@
 		</div>
 		<div class ="right menu">
 			<br/>
-			<%= link_to "Home",   '#' %>
-			<%= link_to "Help",   '#' %>
-			<%= link_to "Log In",   '#' %>
+			<%#= link_to "Home", root_path %>
+			
+			
+			<%= link_to "Blog", blog_path %>
+			<%= link_to "About", about_path %>
+			<%= link_to "Help", help_path %>
 		<%# if signed_in? %>
 		<br/>
 		<%#= link_to "home", home_path %>
@@ -48,9 +51,9 @@
 		<div class="alert alert-<%= key %> close" data-dismiss="alert"><%= value %></div>
 		<br/>
 		<% end %>
-
-
 		<%= yield %>
+		<hr>
+		<p>Not sure it footer is really imperative at this point.</p>
 	</div>
 
 </body>

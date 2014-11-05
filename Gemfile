@@ -5,8 +5,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 # Use mysql as the database for Active Record
 gem 'mysql2'
+gem 'will_paginate',           '3.0.7'
+
 gem 'puma'
 gem 'zurb-foundation'
+gem 'faker',                '1.4.2'
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

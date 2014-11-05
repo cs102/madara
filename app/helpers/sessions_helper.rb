@@ -11,6 +11,28 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  #------> START CORRECT USER EDIT AND REDIRECT
+
+  # Returns true if the given user is the current user.
+  # use to Edit correct user
+  def current_user?(user)
+    user == current_user
+  end
+
+  # Redirects to stored location (or to the default).
+  def redirect_back_or(default)
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  # Stores the URL trying to be accessed.
+  def store_location
+    session[:forwarding_url] = request.url if request.get?
+  end
+
+  #-----> END CORRECT USER EDIT AND REDIRECT
+
+
   # Returns the user corresponding to the remember token cookie.
   def current_user
     if (user_id = session[:user_id])

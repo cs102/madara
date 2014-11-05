@@ -1,3 +1,23 @@
 <% provide(:title, 'Register') %>
-<h1>Register</h1>
-<p>This will be a signup page for new users.</p>
+<h1>Join Little Bookmarks</h1>
+<p>The best way save and share bookmarks</p>
+<br/>
+
+<%= form_for(@user) do |f| %>
+<%= render 'shared/error_messages' %>
+
+<div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <%= f.submit "Create my account", class: "button create_account" %>
+<% end %>

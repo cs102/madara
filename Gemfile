@@ -9,11 +9,11 @@ gem 'will_paginate',           '3.0.7'
 # Pismo gets titles for bookmarks model
 gem 'pismo'
 
+gem "paperclip", "~> 4.2"
 gem 'puma'
+
 #gem 'zurb-foundation'
 gem 'faker',                '1.4.2'
-
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

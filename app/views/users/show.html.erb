@@ -1,7 +1,18 @@
-<p>Current User : <%= current_user.name %></p>
+<%= image_tag(@user.avatar.thumb, alt: "current_user.name", size: "300x300")   if @user.avatar.thumb %>
+
+<p>Current User : <%= current_user.name if logged_in? %></p>
+
 
 <%= @user.name %>
 <%= @user.email %>
+
+<%#= image_tag(@user.avatar) if @user.avatar %>
+
+
+
+
+<%#= image_tag(@user.avatar.micro) if @user.avatar.micro %>
+
 
 <% if @user.bookmarks.any? %>
   <h3>boomarks (<%= @user.bookmarks.count %>)</h3>

@@ -31,6 +31,11 @@ GEM
     awesome_print (1.2.0)
     bcrypt (3.1.7)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -105,6 +110,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
+    rmagick (2.13.3)
     sanitize (3.0.0)
       crass (~> 0.2.0)
       nokogiri (>= 1.4.4)
@@ -149,6 +155,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
+  carrierwave
   coffee-rails (~> 4.0.0)
   faker (= 1.4.2)
   jbuilder (~> 2.0)
@@ -158,6 +165,7 @@ DEPENDENCIES
   pismo
   puma
   rails (= 4.1.7)
+  rmagick
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

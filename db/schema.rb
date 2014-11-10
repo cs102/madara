@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108231848) do
+ActiveRecord::Schema.define(version: 20141110070211) do
 
   create_table "bookmarks", force: true do |t|
     t.text     "link"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20141108231848) do
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.datetime "reset_sent_at"
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

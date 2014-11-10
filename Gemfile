@@ -8,6 +8,8 @@ gem 'mysql2'
 gem 'will_paginate',           '3.0.7'
 # Pismo gets titles for bookmarks model
 gem 'pismo'
+gem "rmagick"
+gem "carrierwave"
 
 gem "paperclip", "~> 4.2"
 gem 'puma'

@@ -50,7 +50,8 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find(params[:id])
-  	debugger
+    @bookmarks = @user.bookmarks.paginate(page: params[:page])
+  	#debugger
     #redirect_to root_url and return unless FILL_IN
 
   end
@@ -67,16 +68,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
-    end
-
-    # Before filters/action
-    # Confirms a logged-in user.
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in."
-        redirect_to login_url
-      end
     end
 
     # Confirms the correct user.

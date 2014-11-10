@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :bookmarks, dependent: :destroy
+
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   before_create :create_activation_digest
@@ -13,6 +15,7 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 4 }, allow_blank: true
 
+  
   # Returns the hash digest of the given string.
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -77,6 +80,9 @@ class User < ActiveRecord::Base
     reset_sent_at < 2.hours.ago
   end
 
+  def feed
+    Bookmark.where("user_id = ?", id)
+  end
 
   private
 

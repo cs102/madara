@@ -2,3 +2,13 @@
 
 <%= @user.name %>
 <%= @user.email %>
+
+<% if @user.bookmarks.any? %>
+  <h3>boomarks (<%= @user.bookmarks.count %>)</h3>
+  <table class="table table-striped content">
+    <%= render @bookmarks %>
+  </table>
+
+<% end %>
+<hr/>
+<%= will_paginate @bookmarks %>

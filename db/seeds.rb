@@ -26,3 +26,9 @@ User.create!(name:  "John Smith",
                activated: true,
                activated_at: Time.zone.now)
 end
+
+users = User.order(:created_at).take(6)
+ 50.times do
+  link = Faker::Lorem.sentence(5)
+  users.each { |user| user.bookmarks.create!(link: link) }
+end

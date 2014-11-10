@@ -1,10 +1,28 @@
-<% provide(:title, "itachi") %>
-<p class = "info"> Save your bookmarks and take them with you </p>
-<br/>
-<%= link_to (image_tag('baby-boy-icon.png')), '#' %>
-<br/>
-<br/>
-<%= link_to "Sign Up", register_path, class: 'green' %>
-<br/>
-<br/>
-<p>or  <%= link_to "Login to your account", login_path %></p>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="bookmark_form">
+        <%= render 'shared/bookmark_form' %>
+      </section>
+    </aside>
+    <div>
+      <%= render 'shared/feed' %>
+    </div>
+
+  </div>
+<% else %>
+
+	<% provide(:title, "itachi") %>
+	<p class = "info"> Save your bookmarks and take them with you </p>
+	<br/>
+	<%= link_to (image_tag('baby-boy-icon.png')), '#' %>
+	<br/>
+	<br/>
+	<%= link_to "Sign Up", register_path, class: 'green' %>
+	<br/>
+	<br/>
+	<p>or  <%= link_to "Login to your account", login_path %></p>
+<% end %>

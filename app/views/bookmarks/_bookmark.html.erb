@@ -1,0 +1,32 @@
+<li id="bookmark-<%= bookmark.id %>">
+  <%#= link_to gravatar_for(bookmark.user, size: 50), bookmark.user %>
+  <span class="user"><%#= link_to bookmark.user.name, bookmark.user %></span>
+  <span class="content"><%#= bookmark.link %></span>
+  <span class="timestamp">
+   <%#= time_ago_in_words(bookmark.created_at) %> 
+  </span>
+</li>
+
+
+<tr>
+  <td><%= link_to bookmark.user.name, bookmark.user %></td>
+  <td>
+   <% if bookmark.title.blank? %>
+     <%= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>
+   <% else %>
+      <%= link_to truncate(bookmark.title, :length => 80), bookmark.link,:target => "_blank" %>
+  <% end %>
+<%#= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>
+</td>
+<td>
+<% if current_user?(bookmark.user) %>
+<%= link_to "", bookmark, method: :delete,
+class: "delete_icon",
+data: { confirm: "Are you sure?" },
+title: bookmark.link %>
+<% end %>
+</td>
+<td>
+<%= time_ago_in_words(bookmark.created_at)%>
+</td>
+</tr>

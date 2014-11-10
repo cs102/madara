@@ -1,0 +1,40 @@
+// Place all the styles related to the Bookmarks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table {
+width: 800px;
+background-color: #ffffff;
+margin-bottom: 20px;
+background-color: transparent;
+border: 1px solid #b7c7cf;
+border-collapse: collapse;
+border-spacing: 0;
+}
+.table th,
+.table td {
+padding: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: top;
+border-top: 1px solid #dddddd;
+}
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+background-color: #f9f9f9;
+}
+table a:link {
+text-decoration: none;
+color: #444 ;
+}
+table a:visited {
+text-decoration: none;
+color: #444 ;
+}
+table a:hover {
+text-decoration: underline;
+}
+table a:active {
+text-decoration: underline;
+}

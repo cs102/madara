@@ -6,6 +6,7 @@ gem 'rails', '4.1.7'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 gem 'will_paginate',           '3.0.7'
+# Pismo gets titles for bookmarks model
 gem 'pismo'
 
 gem 'puma'

@@ -9,7 +9,10 @@
 
 
 <tr>
-  <td><%= link_to bookmark.user.name, bookmark.user %></td>
+  <td>
+    <%= image_tag(current_user.avatar.mini, size: "20x20", alt: "current_user.name", 
+                                                 class: "micro") %>
+    <%#= link_to bookmark.user.name, bookmark.user %></td>
   <td>
    <% if bookmark.title.blank? %>
      <%= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>

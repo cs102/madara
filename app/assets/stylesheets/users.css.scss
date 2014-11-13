@@ -57,6 +57,38 @@ p {
 	width:720px;
 }
 
+.all-users{
+	line-height: 13px;
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  padding: 12px;
+  height:100px;
+  width:290px;
+  margin-left:5px;
+  margin-bottom: 40px;
+  margin-right:5px;
+  border: 1px solid #CECCCC;
+  background-color: #E3E8E8;
+  float: left;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.user-avatar {
+  float:left;
+  border: none;
+  width:80px;
+}
+
+.user-name{
+  float:right;
+  width:180px;
+  margin-left: 20px;
+  overflow: hidden;
+  text-transform: lowercase;
+}
+
 /* Profile right */
 .button {
 position: relative;

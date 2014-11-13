@@ -1,33 +1,30 @@
 <% provide(:title, 'All users') %>
-<h1>All users</h1>
+<%#= will_paginate %>
 
-<%= will_paginate %>
+<% @users.each do |user| %>
+<div class ="all-users">
+  <div class = "user-avatar">
+ 	    <% if user.avatar.mini.blank? %>
+	      <%= image_tag("github.png", class: "mini") %> 
+	    <% else %>
+	      <%= image_tag user.avatar.mini, class: "mini" %>      
+	    <% end %>
+	</div>
 
-
-  <% @users.each do |user| %>
-    <div class = "user"> 
-    	<div class ="user-avatar">
-		    <% if user.avatar.mini.blank? %>
-		      <%= image_tag("github.png", class: "mini") %> 
-		    <% else %>
-		      <%= image_tag user.avatar.mini, class: "mini" %>      
-		    <% end %>
-
-		    <div class ="user-name">
-	          <p><%= link_to user.name, user %>
-	          <% if current_user.admin? && !current_user?(user) %>
-		         | <%= link_to "delete", user, method: :delete,
-		                                      data: { confirm: "You sure?" } %>
-		      </p>
-		  <% end %>
-	        </div>
-	    </div>
-
+	<div class = "user-name">	    
+      <p><%= link_to user.name, user %>
+      <% if current_user.admin? && !current_user?(user) %>
+         | <%= link_to "delete", user, method: :delete,
+                                      data: { confirm: "You sure?" } %>
+      <% end %>
+      </p>
+      <%= pluralize(user.bookmarks.count, "bookmark") %>
 	      <%#= render @users %>
 	      <%#= link_to user.name, user %>
-    </div>
-  <% end %>
-<div class="clear"></div>
-
+    </div>  
+    <div class="clear"></div>  
+</div>
+<% end %>
 
 <%= will_paginate %>
+<div class="clear"></div>

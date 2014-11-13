@@ -5,9 +5,9 @@
 <div class ="all-users">
   <div class = "user-avatar">
  	    <% if user.avatar.mini.blank? %>
-	      <%= image_tag("github.png", class: "mini") %> 
+	      <%= link_to (image_tag("github.png", class: "mini")), user %> 
 	    <% else %>
-	      <%= image_tag user.avatar.mini, class: "mini" %>      
+	      <%= link_to (image_tag user.avatar.mini, class: "mini"), user %>      
 	    <% end %>
 	</div>
 
@@ -26,5 +26,5 @@
 </div>
 <% end %>
 
-<%= will_paginate %>
 <div class="clear"></div>
+<%= will_paginate %>

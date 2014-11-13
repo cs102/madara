@@ -1,47 +1,49 @@
-<% provide(:title, "Edit user") %>
-<h1>Public Profile</h1>
+<% provide(:title, "Your Profile") %>
+<div class = "profile">
+  <h1>Public Profile</h1>
 
 
-<%= form_for @user, :html => {:multipart => true} do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
+  <%= form_for @user, :html => {:multipart => true} do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
 
-  <div class="field">
-    <%= f.label :name %><br/>
-    <%= f.text_field :name, class: 'form-control' %>
-  </div>
+    <div class="field">
+      <%= f.label :name %><br/>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
 
-  <div class="field">
-    <%= f.label :email %><br/>
-    <%= f.text_field :email, class: 'form-control' %>
-  </div>
+    <div class="field">
+      <%= f.label :email %><br/>
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
 
-  <div class="field">
-    <% if current_user.avatar.blank? %>
-      <%= image_tag("camera.png", size: "20x20", alt: "current_user.name", 
-                                                 class: "micro") %>
-      
-    <% else %>
+    <div class="field">
+      <% if current_user.avatar.blank? %>
+        <%= image_tag("camera.png", alt: "current_user.name", 
+                                                   class: "micro") %>
+        
+      <% else %>
 
-      <%= image_tag(current_user.avatar.micro, size: "20x20", alt: "current_user.name", 
-                                                 class: "micro") %>
-      
-    <% end %>
-    <%= f.label "Profile Picture" %><br />
-    <%= f.file_field :avatar %>
-  </div>
+        <%= image_tag(current_user.avatar.mini, size: "96x96", alt: "current_user.name", 
+                                                   class: "micro") %>
+        
+      <% end %>
+      <br/>
+      <%= f.label "Profile Picture" %><br />
+      <%= f.file_field :avatar %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password %><br/>
-    <%= f.password_field :password, class: 'form-control' %>
-  </div>
+    <div class="field">
+      <%= f.label :password %><br/>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br/>
-    <%= f.password_field :password_confirmation, class: 'form-control' %>
-  </div>
+    <div class="field">
+      <%= f.label :password_confirmation, "Confirmation" %><br/>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
 
-  <div class="field">
-    <%= f.submit "Save changes", class: "button create_account" %>
-  </div>
-<% end %>
-
+    <div class="field">
+      <%= f.submit "Save changes", class: "button create_account" %>
+    </div>
+  <% end %>
+</div>

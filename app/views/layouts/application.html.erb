@@ -39,8 +39,8 @@
 					<%= image_tag("camera.png", size: "20x20", alt: "current_user.name", 
                     			                             class: "micro") %>
     			<% else %>
-    				<%= image_tag(current_user.avatar.micro, size: "20x20", alt: "current_user.name", 
-                    			                             class: "micro") %>
+    				<%= link_to (image_tag(current_user.avatar.micro, size: "20x20", alt: "current_user.name", 
+                    			                             class: "micro")), current_user %>
       				
     			<% end %>
 				<%#= current_user.name %> 
@@ -49,7 +49,7 @@
 				<%#= current_user.name %> 
 			<%= link_to "Users", users_path %>
 			<%= link_to "Settings", edit_user_path(current_user) %>
-			<%= link_to "Profile", current_user %>
+			<%#= link_to "Profile", current_user %>
 			<%= link_to "Log out", logout_path, method: "delete" %>
 			<span>
 			</div>

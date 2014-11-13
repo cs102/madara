@@ -6,7 +6,15 @@
 
 /* Gives round corner to header images */
 .micro {
-	border-radius: 2px;
+	border-radius: 150px;
+}
+
+.mini {
+	border-radius: 150px;
+}
+/* Gives round corner to thumb images */
+.thumb {
+	border-radius: 150px;
 }
 
 p { 
@@ -84,6 +92,3 @@ border-color: #5ca941;
 }
 
 
-ul li  {
-	display: inline;
-}

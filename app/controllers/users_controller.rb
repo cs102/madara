@@ -6,8 +6,6 @@ class UsersController < ApplicationController
 
 
   def index
-    #@users = User.all
-    #@users = User.where(activated: FILL_IN).paginate(page: params[:page])
     @users = User.paginate(page: params[:page])
 
   end
@@ -51,9 +49,6 @@ class UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
     @bookmarks = @user.bookmarks.paginate(page: params[:page])
-  	#debugger
-    #redirect_to root_url and return unless FILL_IN
-
   end
 
   def destroy

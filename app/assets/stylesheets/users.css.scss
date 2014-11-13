@@ -3,10 +3,53 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+/* Gives round corner to header images */
 .micro {
 	border-radius: 2px;
 }
 
+p { 
+	font-size: 16px;
+	line-height: 1.6em;
+}
+/* Profile left */
+
+.profile_left {
+	float:left;
+	width: 250px;
+}
+
+.profile_name {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 26px;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	font-weight: bold;
+}
+
+.location {
+	background-image: url('location-pin.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	filter: opacity(50%);
+
+}
+
+.join {
+	background-image: url('clock.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+.profile_right {
+	float: right;
+	width:720px;
+}
+
+/* Profile right */
 .button {
 position: relative;
 display: inline-block;
@@ -40,3 +83,7 @@ background-repeat: repeat-x;
 border-color: #5ca941;
 }
 
+
+ul li  {
+	display: inline;
+}

@@ -155,12 +155,9 @@ table a:active {
   border-radius: 3px;
 }
 
-hr {border: 1px solid silver;}
 
 .left {
   float:left;
-  
-
 }
 .main_links { 
   width: 200px;
@@ -199,12 +196,14 @@ hr {border: 1px solid silver;}
 .feature {
   width: 550px;
 }
+
 .logo { 
   font-size: 36px;
   font-family: 'Ubuntu', sans-serif;
   color: #e51937;
   font-weight: bold;
 }
+
 .logo-color a:active {
   text-decoration: none;
   color: white;
@@ -216,7 +215,6 @@ hr {border: 1px solid silver;}
 }
 
 .logo-color a:visited {
-  color: white;
   padding: 2px 5px;
   text-decoration: none;
 }
@@ -244,7 +242,7 @@ div.field, div.actions {
 }
 
 .todo {
-padding: 8px 35px 8px 14px;
+  padding: 8px 35px 8px 14px;
   background-color: #FCFC76;
   border: 1px solid #F2F241;
   border-radius:5px;

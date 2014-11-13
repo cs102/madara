@@ -10,8 +10,10 @@
 
 <tr>
   <td>
-    <%= image_tag(current_user.avatar.mini, size: "20x20", alt: "current_user.name", 
+    <% if @user.avatar.mini %>
+    <%= image_tag(@user.avatar.mini, size: "20x20", alt: "current_user.name", 
                                                  class: "micro") %>
+    <% end %>    
     <%#= link_to bookmark.user.name, bookmark.user %></td>
   <td>
    <% if bookmark.title.blank? %>

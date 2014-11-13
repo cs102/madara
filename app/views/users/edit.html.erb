@@ -16,7 +16,17 @@
   </div>
 
   <div class="field">
-    <%= f.label "Avatar" %><br />
+    <% if current_user.avatar.blank? %>
+      <%= image_tag("camera.png", size: "20x20", alt: "current_user.name", 
+                                                 class: "micro") %>
+      
+    <% else %>
+
+      <%= image_tag(current_user.avatar.micro, size: "20x20", alt: "current_user.name", 
+                                                 class: "micro") %>
+      
+    <% end %>
+    <%= f.label "Profile Picture" %><br />
     <%= f.file_field :avatar %>
   </div>
 

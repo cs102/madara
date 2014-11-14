@@ -7,10 +7,13 @@
   </span>
 </li>
 
-
 <tr>
   <td>
-    <% if @user.avatar.mini %>
+    <% if @user.avatar.mini.blank? %>
+      <%=image_tag('camera.png', size: "16x16") %>
+
+    <% else %>
+    
     <%= image_tag(@user.avatar.mini, size: "20x20", alt: "current_user.name", 
                                                  class: "micro") %>
     <% end %>    

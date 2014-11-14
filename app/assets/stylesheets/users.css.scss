@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-warten auf Sie
+/* warten auf Sie - Waiting for you, Em */
 
 /* start : styles for settings aka Edit Public Profile*/
 
@@ -25,14 +25,13 @@ textarea {
     background-color: #fafafa;
 }
 
-input[type=text]:focus, ,input[type=password]:focus, textarea:focus {
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
   -moz-box-shadow: 0 0 5px #51cbee;
   -webkit-box-shadow: 0 0 5px #51cbee;
   box-shadow: 0 0 5px #51cbee;
   padding: 0.5em 0.6em;
   border: 1px solid #51cbee;
 }
-
 
 /* end : : styles for settings aka Edit Public Profile*/
 

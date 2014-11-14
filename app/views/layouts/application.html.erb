@@ -19,7 +19,8 @@
 		    <span class="beta">Beta</span>
 		    <br/>
 		    <span class="logo-color">
-		    <%= link_to 'little bookmarks', root_path, :class => 'logo' %>
+		    	<%= link_to (image_tag("bookmark.png")), root_path, :class => 'logo' %>
+		        <%= link_to 'little bookmarks', root_path, :class => 'logo' %>
 		    </span>
 		</div>
 		<div class ="left menu main_links">
@@ -36,8 +37,8 @@
 			<br/>
 			<span>
 				<% if current_user.avatar.blank? %>
-					<%= image_tag("camera.png", size: "20x20", alt: "current_user.name", 
-                    			                             class: "micro") %>
+					<%= link_to (image_tag("camera.png", size: "20x20", alt: "current_user.name", 
+                    			                             class: "micro")), current_user %>
     			<% else %>
     				<%= link_to (image_tag(current_user.avatar.micro, size: "20x20", alt: "current_user.name", 
                     			                             class: "micro")), current_user %>

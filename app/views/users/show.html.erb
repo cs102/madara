@@ -1,5 +1,9 @@
 <div class = "profile_left">
-	<%= image_tag(@user.avatar.thumb, alt: "current_user.name", class: "thumb")   if @user.avatar.thumb %>
+  <% if @user.avatar.thumb.blank? %>
+    <%= image_tag("camera.png") %> 
+  <% else %>
+	  <%= image_tag(@user.avatar.thumb, alt: "current_user.name", class: "thumb")   if @user.avatar.thumb %>
+  <% end %>
 	<p class ="profile_name"><%= @user.name.capitalize %><%#= current_user.name if logged_in? %></p>
 	<p class ="join">Joined: <%= @user.created_at.strftime("%B %d, %Y") %></p>
 	<p class = "location"> Nashville</p>

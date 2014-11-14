@@ -8,12 +8,12 @@
 
     <div class="field">
       <%= f.label :name %><br/>
-      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.text_field :name, :autofocus => true %>
     </div>
 
     <div class="field">
       <%= f.label :email %><br/>
-      <%= f.text_field :email, class: 'form-control' %>
+      <%= f.text_field :email %>
     </div>
 
     <div class="field">
@@ -34,12 +34,12 @@
 
     <div class="field">
       <%= f.label :password %><br/>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.password_field :password %>
     </div>
 
     <div class="field">
       <%= f.label :password_confirmation, "Confirmation" %><br/>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.password_field :password_confirmation %>
     </div>
 
     <div class="field">

@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  #before_action :check_session, :only [:create]
+
   def new
   end
 
@@ -28,9 +30,14 @@ class SessionsController < ApplicationController
     end
   end
 
+
+
   def destroy
     log_out
     redirect_to root_url
+  end
+
+  def check_session
   end
 
 

@@ -1,10 +1,13 @@
-<% provide(:title, "Log in") %>
+<% provide(:title, "Sign in") %>
+
+<%# redirect_to root_url %>
+
 <h1>Log in</h1>
 
 <%= form_for(:session, url: login_path) do |f| %>
 
   <%= f.label :email %><br/>
-  <%= f.text_field :email %><br/>
+  <%= f.text_field :email, :autofocus => true %><br/>
 <br/>
   <%= f.label :password %> <br/>
   <%= f.password_field :password %><br/>
@@ -12,7 +15,7 @@
 
 <%= f.label :remember_me, class: "checkbox inline" do %>
   <%= f.check_box :remember_me %>
-  <span>Remember me on this computer</span>
+  <span>Remember me.</span>
 <% end %>
 <br/>
 <br/>

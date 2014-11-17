@@ -1,14 +1,14 @@
 <% if logged_in? %>
-  <div class="row">
+  <div class="home">
     <aside class="col-md-4">
       <section class="user_info">
         <%#= render 'shared/user_info' %>
       </section>
-      <section class="bookmark_form">
+      <section class="bookmarks">
         <%= render 'shared/bookmark_form' %>
       </section>
     </aside>
-    <div>
+    <div class ="bookmarks">
       <%= render 'shared/feed' %>
     </div>
 

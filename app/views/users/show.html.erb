@@ -11,20 +11,21 @@
 </div>
 
 <div class = "profile_right">
-	<% if @user.bookmarks.any? %>
-      <h3>bookmarks (<%= @user.bookmarks.count %>)</h3>
-      <table class="table table-striped content">
-        <%= render @bookmarks %>
-      </table>
-    <% end %>
-    <hr/>
-    <%= will_paginate @bookmarks %>
+  <div class = "profile_bookmarks">
+  	<% if @user.bookmarks.any? %>
+        <h3>bookmarks (<%= @user.bookmarks.count %>)</h3>
+        <table class="table table-striped content">
+          <%= render @bookmarks %>
+        </table>
+      <% end %>
+      <hr/>
+      <%= will_paginate @bookmarks %>
+  </div>
+
+  
 </div>
 
 <div class="clear"></div>
-
-
-
 
 <%#= image_tag(@user.avatar) if @user.avatar %>
 

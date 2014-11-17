@@ -22,7 +22,7 @@ body, p, ol, ul, td {
 
 hr { border: 1px solid silver; margin-top:50px;}
 table {
-  width: 800px;
+  width: 100%;
   background-color: #ffffff;
   margin-bottom: 20px;
   background-color: transparent;
@@ -74,7 +74,7 @@ table a:active {
           border-radius: 4px;
 }
 
-.bookmarks { width: 700px; margin-top: 10px; height: 20px;}
+
 .favicon { float: left;width: 20px; }
 .url{float: left; width: 400px;}
 .created_url {float: left; width: 120px;margin-left: 50px; }

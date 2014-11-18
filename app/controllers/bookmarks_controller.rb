@@ -22,7 +22,6 @@ class BookmarksController < ApplicationController
 	  @bookmark.destroy!
 	  flash[:success] = "Bookmark deleted"
 	  redirect_to request.referrer || root_url
-
   end
 
   private

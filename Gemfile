@@ -7,7 +7,7 @@ gem 'rails', '4.1.7'
 gem 'mysql2'
 gem 'will_paginate',           '3.0.7'
 # Pismo gets titles for bookmarks model
-gem 'pismo'
+gem "pismo"
 gem "rmagick"
 gem "carrierwave"
 
@@ -50,3 +50,4 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bullet', group: :development

@@ -16,20 +16,27 @@
    <% if bookmark.title.blank? %>
      <%= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>
      <br/>
+     <%= image_tag("image.png")%>
      <div class = "bookmark-time">
-      <%= time_ago_in_words(bookmark.created_at) %>
-      -<%= @current_time.strftime("%B %d, %Y ") %>
+      <% if bookmark.created_at >= Time.now - 24.hours %>
+          <%= time_ago_in_words(bookmark.created_at) %>
+        <% else %>
+          <%= bookmark.created_at.strftime("%b %d, %Y ") %>
+      <% end %>
      </div>
+
      
    <% else %>
       <%= link_to truncate(bookmark.title, :length => 80), bookmark.link,:target => "_blank" %>
       <br/>
       <div class = "bookmark-time">
-        <%= time_ago_in_words(bookmark.created_at, class: "bookmark-time")%>
-        - <%= @current_time.strftime("%B %d, %Y ") %>
+        <% if bookmark.created_at >= Time.now - 24.hours %>
+          <%= time_ago_in_words(bookmark.created_at) %>
+        <% else %>
+          <%= bookmark.created_at.strftime("%b %d, %Y ") %>
+      <% end %>
       </div>
   <% end %>
-<%#= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>
 </td>
 <td>
 <% if current_user?(bookmark.user) %>

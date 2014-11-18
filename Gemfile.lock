@@ -31,6 +31,9 @@ GEM
     awesome_print (1.2.0)
     bcrypt (3.1.7)
     builder (3.2.2)
+    bullet (4.13.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (>= 1.6.0)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -86,7 +89,7 @@ GEM
       fast-stemmer
       nokogiri
       sanitize
-    puma (2.9.1)
+    puma (2.9.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -148,6 +151,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    uniform_notifier (1.6.2)
     will_paginate (3.0.7)
 
 PLATFORMS
@@ -155,6 +159,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
+  bullet
   carrierwave
   coffee-rails (~> 4.0.0)
   faker (= 1.4.2)

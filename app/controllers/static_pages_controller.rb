@@ -2,9 +2,8 @@ class StaticPagesController < ApplicationController
   def home
     if logged_in?
   	  @bookmark = current_user.bookmarks.build
-  	  @feed_items = current_user.feed.paginate(page: params[:page]) 
+  	  @feed_items = current_user.feed.paginate(page: params[:page]).includes(:user)
       @user = current_user
-      @current_time = Time.now
     end
   end
 

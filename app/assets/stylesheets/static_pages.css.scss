@@ -21,47 +21,6 @@ body, p, ol, ul, td {
 }
 
 hr { border: 1px solid silver; margin-top:50px;}
-table {
-  width: 100%;
-  background-color: #ffffff;
-  margin-bottom: 20px;
-  background-color: transparent;
-  border: 1px solid #b7c7cf;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.table th,
-.table td {
-  padding: 8px;
-  line-height: 20px;
-  text-align: left;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-}
-
-.table-striped tbody > tr:nth-child(odd) > td,
-.table-striped tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
-}
-
-table a:link {
-    text-decoration: none;
-    color: #444 ;
-}
-
-table a:visited {
-    text-decoration: none;
-    color: #444 ;
-}
-
-table a:hover {
-    text-decoration: underline;
-}
-
-table a:active {
-    text-decoration: underline;
-}
 
 .alert {
   padding: 8px 35px 8px 14px;
@@ -78,6 +37,7 @@ table a:active {
 .favicon { float: left;width: 20px; }
 .url{float: left; width: 400px;}
 .created_url {float: left; width: 120px;margin-left: 50px; }
+
 
 .delete_icon {
   background-image: asset-url("delete.png");
@@ -100,9 +60,9 @@ table a:active {
 .header {
   width:100%;margin-top:0px;margin-bottom:0px;
   height: 10px;
-  background-image:asset-url("noise.png");
   background-color: rgb(245, 245, 245);
   border-bottom: 1px solid rgb(229, 229, 229);
+  background-image: asset-url("blue_bg.png");
   
   padding-bottom:45px;
   margin-bottom:10px;
@@ -111,31 +71,28 @@ table a:active {
 }
 
 .menu {
-  width: 360px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
+  font-size: 16px;
+  color: white;
 }
 
 .menu a:active {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .menu a:link {
   text-decoration: none;
   padding: 2px 5px;  
-  color: #333;
+  color: white;
 }
 
 .menu a:visited {
-  color: black;
   padding: 2px 5px;
-  color: #333;
+  color: white;
 }
 
 .menu a:hover {
-  color: rgb(65, 131, 196);
+  color: silver;
   border-radius:5px;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
@@ -145,7 +102,7 @@ table a:active {
 }
 
 .beta{
-  background-color: #00a9d2;
+  background-color: #b94a48;
   padding: 2px 4px 3px;
   font-size: 11.049999999999999px;
   font-weight: bold;
@@ -159,6 +116,7 @@ table a:active {
 
 .left {
   float:left;
+
 }
 .main_links { 
   width: 200px;
@@ -166,9 +124,7 @@ table a:active {
 }
 
 .right {
-  float: right;
-  width: 340px;
-  
+  float: right;  
 }
 
 .register {
@@ -201,7 +157,7 @@ table a:active {
 .logo { 
   font-size: 36px;
   font-family: 'Ubuntu', sans-serif;
-  color: #e51937;
+  color: white;
   font-weight: bold;
 }
 
@@ -370,42 +326,44 @@ ul, li { list-style-type: none; }
 
 .pagination em {
   color: white;
-  border: 1px solid #99A7BF;
+  border: 1px solid #e5e5e5;
   padding:3px 6px;  
-  background-color: #B0C4DE;
+  background-color: #4183c4;
   font-weight: bold;
-  border-radius: 5px;
   height: 20px;
 }
 
 .pagination a:hover {
-  color: white;
-  background-color:  #8FA1B7;
-  border-radius: 5px;
-  border: 1px solid silver;
+  color: #337ab7; 
+  background-color: #ddd;
+  border: 1px solid #ddd;
 }
 
-.pagination a, .pagination .previous_page {
-  background-color: #B0C4DE;
+.pagination a, .pagination .previous_page,  {
+  background-color: white;
   font-weight: bold;
   padding:3px 6px;
   border: 1px solid #B0C4DE;
-  border-radius: 5px;
   height: 20px;
 }
 
+.pagination a:visited,
+.pagination a:link,
+.pagination a:active, {
+ color:#4183c4;
+ text-decoration: none;
+} 
 .pagination .next_page {
-  background-color: #B0C4DE;
+  background-color: white;
   height: 20px;
   display: inline;
 }
 
 .pagination .disabled {
-  background-color: #B0C4DE;
+  background-color: white;
   font-weight: bold;
   padding:3px 6px;
   border: 1px solid #B0C4DE;
-  border-radius: 5px;
 }
 
 /* end-> style pagination*/

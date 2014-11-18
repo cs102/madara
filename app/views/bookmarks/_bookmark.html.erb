@@ -15,8 +15,6 @@
   <td>
    <% if bookmark.title.blank? %>
      <%= link_to truncate(bookmark.link, :length => 80), bookmark.link,:target => "_blank" %>
-     <br/>
-     <%= image_tag("image.png")%>
      <div class = "bookmark-time">
       <% if bookmark.created_at >= Time.now - 24.hours %>
           <%= time_ago_in_words(bookmark.created_at) %>
@@ -39,12 +37,11 @@
   <% end %>
 </td>
 <td>
-<% if current_user?(bookmark.user) %>
-<%= link_to "", bookmark, method: :delete,
-class: "delete_icon",
-data: { confirm: "Are you sure?" },
-title: bookmark.link %>
-<% end %>
+  <% if current_user?(bookmark.user) %>
+     <%= link_to "", bookmark, method: :delete, class: "delete_icon",
+                               data: { confirm: "Are you sure?" },
+                               title: bookmark.link %>
+  <% end %>
 </td>
 <!--
 <td>

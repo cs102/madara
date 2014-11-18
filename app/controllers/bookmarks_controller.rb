@@ -10,11 +10,12 @@ class BookmarksController < ApplicationController
     @bookmark.title = doc.title.to_s
     
     if @bookmark.save
-      flash[:success] = "Bookmark saved"
+      #flash[:success] = "Bookmark saved"
       redirect_to root_url
     else
-      @feed_items = [] # this line is need it case of link is empty
-      render 'static_pages/home'
+      redirect_to root_url
+      #@feed_items = [] # this line is need it case of link is empty
+      #render 'static_pages/home'
     end
   end
 

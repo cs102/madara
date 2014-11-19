@@ -67,8 +67,9 @@
 			<span>
 			</div>
 			<% else %>
-			<div class = "right login">
-			<%= link_to "Login", login_path, :class => '' %>
+			<div class = "button">
+			<%= link_to "Login", login_path, :class => 'button' %>
+			  =^.^=
 			</div>
 			<% end %>
 			<div class ="clear"></div>
@@ -84,8 +85,13 @@
 	
 		<%= yield %>
 		<hr>
-		<p>Not sure it footer is really imperative at this point.</p>
-		<%= debug(params) if Rails.env.development? %>
+		<p class = "footer">Made with
+			<%= image_tag("heart.png", size: "14x14", alt: "love") %> + 
+			<%= image_tag("coffee.png", size: "14x14", alt: "love") %> 
+			
+		in Nashville</p>
+	
+		<%#= debug(params) if Rails.env.development? %>
 	</div>
 
 </body>

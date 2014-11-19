@@ -14,16 +14,21 @@
 
   </div>
 <% else %>
-
-	<% provide(:title, "itachi") %>
-	<p class = "info"> Save your bookmarks and take them with you </p>
-	<br/>
-	<%= link_to (image_tag('baby-boy-icon.png')), '#' %>
+<div class ="home">
+	<% provide(:title, "Welcome") %>
+  <h1>Your favorite links</h1>
+  <h1>anytime, anywhere</h1>
+  <p>Social Bookmarks</p>
+	<p>No ads, no bs!</p>
+  <hr>
+	<p>thanks for trying <%= link_to (image_tag('baby-boy-icon.png')), '#' %> little bookmarks</p>
+	
   <%#= image_tag("github.png") %>
 	<br/>
 	<br/>
-	<%= link_to "Sign Up", register_path, class: 'green' %>
+	<%= link_to "Join us Today", register_path, class: 'green' %>
 	<br/>
 	<br/>
 	<p>or  <%= link_to "Login to your account", login_path %></p>
 <% end %>
+</div>

@@ -8,7 +8,7 @@
 }
 
 body, p, ol, ul, td {
-  font-family: HelveticaNeue, Helvetica, Arial, FreeSans , Sans-serif;
+  font-family:  Arial, FreeSans , Sans-serif;
   font-size:   15px;
   line-height: 22px;
   color: #333333;
@@ -23,21 +23,20 @@ body, p, ol, ul, td {
 hr { border: 2px solid silver;}
 
 .alert {
-  padding: 8px 35px 8px 14px;
-  margin-bottom: 20px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 }
 
 
 .favicon { float: left;width: 20px; }
-.url{float: left; width: 400px;}
+.url{ float: left; width: 400px;}
 .created_url {float: left; width: 120px;margin-left: 50px; }
-
 
 .delete_icon {
   background-image: asset-url("delete.png");
@@ -98,7 +97,6 @@ hr { border: 2px solid silver;}
   -webkit-border-radius:5px;
   padding: 2px 5px;
   text-decoration: none;
- 
 }
 
 .beta{
@@ -113,7 +111,15 @@ hr { border: 2px solid silver;}
   border-radius: 3px;
 }
 
+.login-link {
+  text-decoration: none;
+  color: #3b5998;
+  font-weight: bold;
+}
 
+h1 {
+  color: #626262;
+}
 .left {
   float:left;
 
@@ -217,15 +223,16 @@ div.field, div.actions {
 }
 
 .alert-success {
+  color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
 
-.alert-error {
-  background-color: #f2dede;
-  border-color: #eed3d7;
-  color: #b94a48;
-  display: block;
+.alert-danger {
+ color: #b94a48;
+ background-color: #f2dede;
+ border-color: #eed3d7;
+ display: block;
 }
 
 .help-inline {
@@ -239,11 +246,9 @@ div.field, div.actions {
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
 }
 
 #error_explanation h2 {
@@ -258,8 +263,13 @@ div.field, div.actions {
 }
 
 #error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+  font-size: 14px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  border: 1px solid #fbeed5;
+  padding: 8px 35px 8px 14px;
+  border-radius: 4px;
 }
 
 .clear {

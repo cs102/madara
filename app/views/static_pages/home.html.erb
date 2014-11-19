@@ -11,24 +11,23 @@
     <div class ="bookmarks">
       <%= render 'shared/feed' %>
     </div>
-
   </div>
+<div class="clear"></div>
 <% else %>
-<div class ="home">
+
 	<% provide(:title, "Welcome") %>
   <h1>Your favorite links</h1>
   <h1>anytime, anywhere</h1>
-  <p>Social Bookmarks</p>
 	<p>No ads, no bs!</p>
-  <hr>
-	<p>thanks for trying <%= link_to (image_tag('baby-boy-icon.png')), '#' %> little bookmarks</p>
+  <br/>
+  <br/>
+  <h2>
+  <%= link_to "Join us Today", register_path, class: 'green' %> 
+  </h2>
+	<p>try us<%= link_to (image_tag('baby-boy-icon.png')), '#' %> Currently in Beta stage</p>
 	
   <%#= image_tag("github.png") %>
 	<br/>
-	<br/>
-	<%= link_to "Join us Today", register_path, class: 'green' %>
-	<br/>
-	<br/>
-	<p>or  <%= link_to "Login to your account", login_path %></p>
+	<p>or  <%= link_to "Login to your account", login_path, class: 'login-link' %></p>
+
 <% end %>
-</div>

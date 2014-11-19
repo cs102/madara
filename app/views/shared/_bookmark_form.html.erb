@@ -1,7 +1,7 @@
 <%= form_for(@bookmark) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :link, placeholder: "Enter complete URL", :rows=>2, :cols=>70, :autofocus => true  %>
+    <%= f.text_area :link, placeholder: "Enter complete URL", :rows=>2, :cols=>68, :autofocus => true  %>
   </div>
   <%= f.submit "+ Save Bookmark", class: "button primary"%>
 <% end %>

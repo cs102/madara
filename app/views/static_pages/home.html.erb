@@ -5,6 +5,17 @@
         <%#= render 'shared/user_info' %>
       </section>
       <section class="bookmarks">
+        <% if @feed_items.count <= 0 %>
+          <span> <%= link_to (image_tag('baby-boy-icon.png')), '#' %>
+          Welcome to Little Bookmarks</span>
+          <br/>
+          <br/>
+        <p class = "info todo">Saving bookmarks its's easy as Ctrl + C and Ctrl + V</p>
+        <%elsif @feed_items.count >= 5 %>
+          <% else %>
+        <p class = "info todo">you are getting good!... [ message will self destruct after 5 bookmarks ]</p>
+        <% end %>
+        <br/>
         <%= render 'shared/bookmark_form' %>
       </section>
     </aside>

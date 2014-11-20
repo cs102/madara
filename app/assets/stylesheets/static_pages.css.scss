@@ -33,6 +33,21 @@ border: 1px solid #fbeed5;
 border-radius: 4px;
 }
 
+.home_left{
+  background-image: asset-url("books.jpg");
+  float:left;
+  width:600px;
+  padding-left: 20px;
+  border-radius: 10px;
+
+}
+
+.home_right{
+  padding-left: 100px;
+  float: right;
+  width:240px;
+  border-radius: 10px;
+}
 
 .favicon { float: left;width: 20px; }
 .url{ float: left; width: 400px;}
@@ -113,7 +128,7 @@ border-radius: 4px;
 
 .login-link {
   text-decoration: none;
-  color: #3b5998;
+  color: #626262;
   font-weight: bold;
 }
 

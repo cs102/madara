@@ -26,6 +26,8 @@
 <div class="clear"></div>
 <% else %>
 
+<div class="home_left">
+
 	<% provide(:title, "Welcome") %>
   <h1>Your favorite links</h1>
   <h1>anytime, anywhere</h1>
@@ -41,4 +43,26 @@
 	<br/>
 	<p>or  <%= link_to "Login to your account", login_path, class: 'login-link' %></p>
 
+</div>
+<div class = "home_right">
+  <%= form_for(@user) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :autofocus => true %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <%= f.submit "Create my account", class: "button create_account" %>
 <% end %>
+
+<% end %>
+</div>
+<div class="clear"></div>

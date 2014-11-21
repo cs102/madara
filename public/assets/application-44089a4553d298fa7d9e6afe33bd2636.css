@@ -1,0 +1,1179 @@
+/* line 5, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+.bookmarks {
+  width: 665px;
+}
+
+/* line 6, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+.bookmark-time {
+  color: #9197a3;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* line 12, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+table {
+  width: 665px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #b7c7cf;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 22, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+/* line 30, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+/* line 33, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+table a:link {
+  text-decoration: none;
+  color: #444444;
+}
+
+/* line 37, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+table a:visited {
+  text-decoration: none;
+  color: #444444;
+}
+
+/* line 41, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+table a:hover {
+  text-decoration: underline;
+}
+
+/* line 44, /home/m/madara/app/assets/stylesheets/bookmarks.css.scss */
+table a:active {
+  text-decoration: underline;
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* line 5, /home/m/apps/madara/app/assets/stylesheets/sessions.css.scss */
+.login {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+/* line 5, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+body, p, ol, ul, td {
+  font-family: Arial, FreeSans , Sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+}
+
+/* line 17, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.info {
+  line-height: 1.7em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 23, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+hr {
+  border: 2px solid silver;
+}
+
+/* line 25, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 36, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.home_left {
+  background-image: url(/assets/books.jpg);
+  float: left;
+  width: 600px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+/* line 45, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.home_right {
+  padding-left: 100px;
+  float: right;
+  width: 240px;
+  border-radius: 10px;
+}
+
+/* line 52, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.favicon {
+  float: left;
+  width: 20px;
+}
+
+/* line 53, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.url {
+  float: left;
+  width: 400px;
+}
+
+/* line 54, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.created_url {
+  float: left;
+  width: 120px;
+  margin-left: 50px;
+}
+
+/* line 56, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.delete_icon {
+  background-image: url(/assets/delete.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-top: 1px;
+  border-radius: 6px;
+  padding-right: 5px;
+}
+
+/* line 65, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.delete_icon:hover {
+  background-image: url(/assets/delete_red.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-top: 1px;
+  border-radius: 6px;
+  padding-right: 5px;
+}
+
+/* line 74, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.header {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 10px;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #e5e5e5;
+  background-image: url(/assets/blue_bg.png);
+  padding-bottom: 45px;
+  margin-bottom: 10px;
+  border-top: 4px solid #40403f;
+  /* color logo #d5dde6*/
+}
+
+/* line 87, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.menu {
+  font-size: 16px;
+  color: white;
+}
+
+/* line 92, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.menu a:active {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 97, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.menu a:link {
+  text-decoration: none;
+  padding: 2px 5px;
+  color: white;
+}
+
+/* line 103, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.menu a:visited {
+  padding: 2px 5px;
+  color: white;
+}
+
+/* line 108, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.menu a:hover {
+  color: silver;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+/* line 117, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.beta {
+  background-color: #b94a48;
+  padding: 2px 4px 3px;
+  font-size: 11.049999999999999px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 129, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.login-link {
+  text-decoration: none;
+  color: #626262;
+  font-weight: bold;
+}
+
+/* line 135, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+h1 {
+  color: #626262;
+}
+
+/* line 138, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.left {
+  float: left;
+}
+
+/* line 142, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.main_links {
+  width: 200px;
+  margin-left: 100px;
+}
+
+/* line 147, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.right {
+  float: right;
+}
+
+/* line 151, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.register {
+  width: 360px;
+}
+
+/* line 155, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.green {
+  *font-size: 90%;
+  /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible;
+  /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  *color: #444;
+  /* IE 6 & 7 */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1em;
+  background: #1cb841;
+  border-radius: 4px 4px 4px 4px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 174, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.feature {
+  width: 550px;
+}
+
+/* line 178, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.logo {
+  font-size: 36px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 185, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.logo-color a:active {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 190, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.logo-color a:link {
+  text-decoration: none;
+  padding: 2px 5px;
+}
+
+/* line 195, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.logo-color a:visited {
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+/* line 200, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.width {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 204, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.content {
+  margin-top: 20px;
+}
+
+/* line 208, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 214, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#a {
+  color: #000;
+}
+
+/* line 215, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#a:visited {
+  color: #666;
+}
+
+/* line 216, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 218, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 222, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.todo {
+  padding: 8px 35px 8px 14px;
+  background-color: #FCFC76;
+  border: 1px solid #F2F241;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* line 230, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.alert {
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 240, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+/* line 246, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.alert-danger {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  display: block;
+}
+
+/* line 253, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.help-inline {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+/* line 258, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.field_with_errors {
+  margin-top: -6px;
+}
+
+/* line 262, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#error_explanation {
+  width: 450px;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+/* line 269, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 280, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+#error_explanation ul li {
+  font-size: 14px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  border: 1px solid #fbeed5;
+  padding: 8px 35px 8px 14px;
+  border-radius: 4px;
+}
+
+/* line 290, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 294, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+ul, li {
+  list-style-type: none;
+}
+
+/* line 297, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.button {
+  *font-size: 90%;
+  /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible;
+  /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  *color: #444;
+  /* IE 6 & 7 */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  background-color: #0078e7;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1em;
+}
+
+/* line 315, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.button:hover,
+.button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+
+/* line 324, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.create_account {
+  font-size: 1em;
+  text-align: center;
+  width: 180px;
+  font-weight: bold;
+}
+
+/* line 331, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.login {
+  font-size: 1em;
+  text-align: center;
+  width: 100px;
+}
+
+/* start -> style pagination*/
+/* line 339, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination {
+  height: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 3px 6px;
+  font-weight: bold;
+  color: #2a4f6f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+/* line 351, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination em {
+  color: white;
+  border: 1px solid #e5e5e5;
+  padding: 3px 6px;
+  background-color: #4183c4;
+  font-weight: bold;
+  height: 20px;
+}
+
+/* line 360, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination a:hover {
+  color: #337ab7;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+/* line 366, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination a, .pagination .previous_page {
+  background-color: white;
+  font-weight: bold;
+  padding: 3px 6px;
+  border: 1px solid #B0C4DE;
+  height: 20px;
+}
+
+/* line 376, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination a:visited,
+.pagination a:link,
+.pagination a:active {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+/* line 380, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination .next_page {
+  background-color: white;
+  height: 20px;
+  display: inline;
+}
+
+/* line 386, /home/m/madara/app/assets/stylesheets/static_pages.css.scss */
+.pagination .disabled {
+  background-color: white;
+  font-weight: bold;
+  padding: 3px 6px;
+  border: 1px solid #B0C4DE;
+}
+
+/* end-> style pagination*/
+/* warten auf Sie - Waiting for you, Em */
+/* start : styles for settings aka Edit Public Profile*/
+/* line 18, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+/* line 30, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -moz-box-shadow: 0 0 5px #51cbee;
+  -webkit-box-shadow: 0 0 5px #51cbee;
+  box-shadow: 0 0 5px #51cbee;
+  padding: 0.5em 0.6em;
+  border: 1px solid #51cbee;
+}
+
+/* end : : styles for settings aka Edit Public Profile*/
+/* Gives round corner to header images */
+/* start: styles all 3 avatars sizes */
+/* line 44, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.micro {
+  border-radius: 150px;
+}
+
+/* line 48, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.mini {
+  border-radius: 150px;
+}
+
+/* Gives round corner to thumb images */
+/* line 52, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.thumb {
+  border-radius: 150px;
+}
+
+/* start: styles all 3 avatars sizes */
+/* line 59, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* start : style for profiles  */
+/* line 65, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.profile_left {
+  float: left;
+  width: 250px;
+}
+
+/* line 70, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.profile_name {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  font-size: 26px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+/* line 80, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.location {
+  background-image: url("location-pin.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  filter: opacity(50%);
+}
+
+/* line 88, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.join {
+  background-image: url("clock.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+/* line 94, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.profile_right {
+  float: right;
+  width: 720px;
+}
+
+/* end : style for profiles */
+/* start : style for users index  */
+/* line 102, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.all-users {
+  line-height: 13px;
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  padding: 12px;
+  height: 100px;
+  width: 290px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+  margin-right: 5px;
+  border: 1px solid #CECCCC;
+  background-color: #E3E8E8;
+  float: left;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 120, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.user-avatar {
+  float: left;
+  border: none;
+  width: 80px;
+}
+
+/* line 126, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.user-name {
+  float: right;
+  width: 180px;
+  margin-left: 20px;
+  overflow: hidden;
+  text-transform: lowercase;
+}
+
+/* end : style for users index  */
+/* start: style buttons */
+/* line 137, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 7px 12px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(#fcfcfc, #eeeeee);
+  background-image: linear-gradient(#fcfcfc, #eeeeee);
+  background-repeat: repeat-x;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+}
+
+/* line 160, /home/m/apps/madara/app/assets/stylesheets/users.css.scss */
+.create_account {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #60b044;
+  background-image: -webkit-linear-gradient(#8add6d, #60b044);
+  background-image: linear-gradient(#8add6d, #60b044);
+  background-repeat: repeat-x;
+  border-color: #5ca941;
+}
+
+/* start: style buttons */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+.footer {
+	border-top: 1px solid silver;
+	margin-top: 20px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}

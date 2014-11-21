@@ -59,6 +59,8 @@ GEM
     faker (1.4.2)
       i18n (~> 0.5)
     fast-stemmer (1.0.2)
+    figaro (1.0.0)
+      thor (~> 0.14)
     highline (1.6.21)
     hike (1.2.3)
     i18n (0.6.11)
@@ -169,6 +171,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   faker (= 1.4.2)
+  figaro
   jbuilder (~> 2.0)
   jquery-rails
   mysql2

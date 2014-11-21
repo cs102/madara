@@ -13,6 +13,9 @@ gem "rmagick"
 gem "carrierwave"
 gem 'puma'
 
+#use for Environment Variables
+gem 'figaro' 
+
 #gem 'zurb-foundation'
 gem 'faker',                '1.4.2'
 

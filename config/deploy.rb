@@ -42,7 +42,7 @@ namespace :deploy do
     run "mkdir -p #{shared_path}/config"
     put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     puts "Now edit the database config files in #{shared_path}."
-    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+    put File.read("config/secrets.example.yml"), "#{shared_path}/config/secrets.yml"
     puts "Please run RAILS_ENV=production rake secret"
     puts "Now edit the secrets files in #{shared_path}."
 

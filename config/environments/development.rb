@@ -23,8 +23,8 @@ Rails.application.configure do
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'littlebookmarks.com',
-  user_name:            ENV["GMAIL_USERNAME"],
-  password:             ENV["GMAIL_PASSWORD"],
+  user_name:            ENV["GMAIL_USERNAME_DEV"],
+  password:             ENV["GMAIL_PASSWORD_DEV"],
   authentication:       'plain',
   enable_starttls_auto: true  }
 

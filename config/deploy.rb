@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+default_run_options[:shell] = '/bin/bash --login' 
 #require 'hipchat/capistrano'
 
 #set :hipchat_token, "jGfVLjSg2hLBD0szNhdEk3iGGF8rvKPsxdPiC3wQ"

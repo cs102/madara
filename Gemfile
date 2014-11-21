@@ -42,6 +42,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 gem 'unicorn'
+gem 'capistrano', '2.15.5'
+
+#gem "net-ssh", "~> 2.7.0"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

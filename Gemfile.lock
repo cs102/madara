@@ -34,6 +34,12 @@ GEM
     bullet (4.13.1)
       activesupport (>= 3.0.0)
       uniform_notifier (>= 1.6.0)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -53,6 +59,7 @@ GEM
     faker (1.4.2)
       i18n (~> 0.5)
     fast-stemmer (1.0.2)
+    highline (1.6.21)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.4)
@@ -70,6 +77,13 @@ GEM
     minitest (5.4.2)
     multi_json (1.10.1)
     mysql2 (0.3.16)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     nokogumbo (1.1.9)
@@ -151,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bullet
+  capistrano (= 2.15.5)
   carrierwave
   coffee-rails (~> 4.0.0)
   faker (= 1.4.2)

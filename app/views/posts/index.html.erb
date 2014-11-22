@@ -1,13 +1,20 @@
 
     <% @posts.each do |post| %>
       <p><%= post.title %></p>
+      <span class = "bookmark-time">
+        <%= post.created_at.strftime("%B %d, %Y") %>
+      </span> 
+      <br/>
+      <br>
+
       <p><%= post.post %></p>
-      <p><%= post.user_id %></p>
+      <p><%#= post.user_id %></p>
         
       
        
-          <td><%= link_to 'Show', post %></td>
+          
         <% if current_user.try(:admin?) %>
+          <td><%= link_to 'Show', post %></td>
           <td><%= link_to 'Edit', edit_post_path(post) %></td>
           <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>

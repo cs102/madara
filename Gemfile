@@ -10,6 +10,12 @@ gem 'will_paginate',           '3.0.7'
 gem "pismo"
 gem "rmagick"
 
+####### manage markdown and code highlighthing
+gem 'redcarpet'
+gem 'nokogiri'
+###### manage markdown and code highlighthing
+
+
 gem "carrierwave"
 gem 'puma'
 

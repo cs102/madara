@@ -120,6 +120,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
+    redcarpet (3.2.0)
     rmagick (2.13.3)
     sanitize (3.0.0)
       crass (~> 0.2.0)
@@ -175,9 +176,11 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
+  nokogiri
   pismo
   puma
   rails (= 4.1.7)
+  redcarpet
   rmagick
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

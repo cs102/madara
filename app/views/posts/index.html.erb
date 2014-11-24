@@ -1,6 +1,13 @@
 
+
+
+
     <% @posts.each do |post| %>
       <p><%= post.title %></p>
+      <!--
+
+      <p>Updated <%#= post.updated_by %></p>
+      -->
       <span class = "bookmark-time">
         <%= post.created_at.strftime("%B %d, %Y") %>
       </span> 
@@ -14,14 +21,19 @@
        
           
         <% if current_user.try(:admin?) %>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <span>
+          <%= link_to 'Show', post %>
+          <%= link_to 'Edit', edit_post_path(post) %>
+          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </span>
         <% end %>
-      </tr>
+     
     <% end %>
-  
-<br>
-<% if current_user.try(:admin?) %>
- <%= link_to 'New Post', new_post_path %>
+
+    <% if current_user.try(:admin?) %>
+<div class ="post">
+ <%= link_to '+ New Post', new_post_path %>
 <% end %>
+</div>
+
+<br>

@@ -2,8 +2,10 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   
   before_action :logged_in_user, only: [:edit, :update, :destroy]
-  #before_action :correct_user,   only: [:edit, :update, :show, :create]
-  before_action :admin_user,     only: [:destroy, :new, :create, :update]
+  before_action :correct_user,   only: [:edit, :update, :show, :create]
+  before_action :admin_user,     only: [:edit, :update, :new, :create, :destroy]
+
+  http_basic_authenticate_with name: "ed", password: "nice", except: [:index, :show]
 
 
   # GET /posts
@@ -80,12 +82,13 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :post, :user_id)
+      params.require(:post).permit(:title, :post, :user_id, :updated_by)
     end
 
     # Confirms the correct user.
     def correct_user
-      @user = User.find(params[:id])
+      #@user = User.find(params[:id])
+      @user = current_user
       redirect_to(root_url) unless @user == current_user
     end
 

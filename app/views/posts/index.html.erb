@@ -17,9 +17,6 @@
       <p class ="post-body"><%= post.post.html_safe %></p>
       <p><%#= post.user_id %></p>
         
-      
-       
-          
         <% if current_user.try(:admin?) %>
           <span>
           <%= link_to 'Show', post %>

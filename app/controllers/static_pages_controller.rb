@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  force_ssl 
+
   def home
     @user = User.new
     if logged_in?

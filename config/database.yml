@@ -17,7 +17,7 @@ default: &default
 
 development:
   <<: *default
-  database: madara_development
+  database: madara_production
   username: root
   password: sharingan
 

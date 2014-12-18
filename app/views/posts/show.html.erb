@@ -1,16 +1,12 @@
 <p id="notice"><%= notice %></p>
-<p><%= @post.title %></p>
+<p class ="post-title"><%= @post.title %></p>
 <span class = "bookmark-time">
   <%= @post.created_at.strftime("%B %d, %Y") %>
 </span>
 
 
-<p>
+<p class ="post-body">
   <%= raw(@post.post) %>
-</p>
-
-<p>
- 
 </p>
 
 <%#= link_to 'Edit', edit_post_path(@post) %>

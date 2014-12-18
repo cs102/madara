@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
           redirect_to root_url
     end
 
-    #Normail user login without account activation process
+    #Normal user login without account activation process
       #log_in user
       #params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       #remember user

@@ -4,11 +4,13 @@ class BookmarksController < ApplicationController
   before_action :correct_user,   only: :destroy
 
   def create
-    #require 'pismo'
-    #doc = Pismo::Document.new(bookmark_params[:link])
-    require 'open-uri'
+    #require 'open-uri'
+    #require 'openssl'
+    require 'pismo'
+    doc = Pismo::Document.new(bookmark_params[:link])
+    #require 'open-uri'
     #require 'Nokogiri'
-    doc = Nokogiri::HTML(open(bookmark_params[:link]))
+    #doc = Nokogiri::HTML(open(bookmark_params[:link]))
     
     @bookmark = current_user.bookmarks.build(bookmark_params)
     @bookmark.title = doc.title.to_s
@@ -17,8 +19,9 @@ class BookmarksController < ApplicationController
       #flash[:success] = "Bookmark saved"
       redirect_to root_url
     else
+      #redirect_to root_url
+      @feed_items = [] # this line is need it case of link is empty
       redirect_to root_url
-      #@feed_items = [] # this line is need it case of link is empty
       #render 'static_pages/home'
     end
   end

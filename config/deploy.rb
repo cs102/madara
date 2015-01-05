@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 default_run_options[:shell] = '/bin/bash --login' 
 #require 'hipchat/capistrano'
-
+#update email 
 #set :hipchat_token, "jGfVLjSg2hLBD0szNhdEk3iGGF8rvKPsxdPiC3wQ"
 #set :hipchat_room_name, "leaf4"
 #set :hipchat_announce, true # notify users?

@@ -6,11 +6,11 @@ class BookmarksController < ApplicationController
   def create
     #require 'open-uri'
     #require 'openssl'
-    #require 'pismo'
-    #doc = Pismo::Document.new(bookmark_params[:link])
+    require 'pismo'
+    doc = Pismo::Document.new(bookmark_params[:link])
     #require 'open-uri'
     #require 'Nokogiri'
-    doc = Nokogiri::HTML(open(bookmark_params[:link]))
+    #doc = Nokogiri::HTML(open(bookmark_params[:link]))
     
     @bookmark = current_user.bookmarks.build(bookmark_params)
     @bookmark.title = doc.title.to_s

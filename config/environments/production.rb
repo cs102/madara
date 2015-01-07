@@ -66,12 +66,14 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.zoho.com',
   port:                 587,
   domain:               'littlebookmarks.com',
-  user_name:            ENV["GMAIL_USERNAME_PRO"],
-  password:             ENV["GMAIL_PASSWORD_PRO"],
+  user_name:            ENV["ZOHO_MAIL_USERNAME_PRO"],
+  password:             ENV["ZOHO_MAIL_PASSWORD_PRO"],
   authentication:       'plain',
+  ssl:                  true,
+  tls:                  true,
   enable_starttls_auto: true  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to

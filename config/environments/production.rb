@@ -67,7 +67,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   address:              'smtp.zoho.com',
-  port:                 587,
+  port:                 465,
   domain:               'littlebookmarks.com',
   user_name:            ENV["ZOHO_MAIL_USERNAME_PRO"],
   password:             ENV["ZOHO_MAIL_PASSWORD_PRO"],

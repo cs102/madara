@@ -13,6 +13,7 @@
 GMAIL_USERNAME_DEV: x109justice@gmail.com
 GMAIL_PASSWORD_DEV: kakashi2011
 
-ZOHO_USERNAME_PRO: no-reply@littlebookmarks.com
-ZOHO_PASSWORD_PRO: kakashi2011
+ZOHO_MAIL_USERNAME_PRO: no-reply@littlebookmarks.com
+ZOHO_MAIL_PASSWORD_PRO: kakashi2011
+
 MADARA_DATABASE_PASSWORD: kakashi2011

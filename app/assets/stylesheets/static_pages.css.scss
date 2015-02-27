@@ -175,9 +175,15 @@ h1 {
   width: 550px;
 }
 
+@font-face {
+   font-family: Nautilus; 
+   src: url('Nautilus.otf');
+}
+
+
 .logo { 
-  font-size: 36px;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-family: 'Nautilus', sans-serif;
   color: white;
   font-weight: bold;
 }

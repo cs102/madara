@@ -1,4 +1,4 @@
-// Place all the styles related to the Users controller here.
+f// Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -77,7 +77,7 @@ p {
 }
 
 .location {
-	background-image: url('location-pin.png');
+	background-image: asset-url('location-pin.png');
 	background-repeat: no-repeat;
 	padding-left: 20px;
 	filter: opacity(50%);
@@ -85,7 +85,7 @@ p {
 }
 
 .join {
-	background-image: url('clock.png');
+	background-image: asset-url('clock.png');
 	background-repeat: no-repeat;
 	padding-left: 20px;
 }

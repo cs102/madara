@@ -2,7 +2,6 @@
 <%#= will_paginate %>
   <% if @users.any? %>
     <p> Users : <%= @users.count %></p>
-    <p> Activaded users: <%= @users.count %></p>
   <% end %>
   <br/>
 <% @users.each do |user| %>
@@ -19,12 +18,15 @@
 	<div class = "user-name">	    
       <p><%= link_to user.name, user %>
       <%# if current_user.admin? && !current_user?(user) %>
+      
       <% if current_user.try(:admin?) %>
+
          | <%= link_to "delete", user, method: :delete,
                                       data: { confirm: "You sure?" } %>
       <% end %>
       </p>
       <%= pluralize(user.bookmarks.count, "bookmark") %>
+      <p class = "date">Joined: <%= user.created_at.strftime("%B %d, %Y - %I:%M %p ") %></p>
 	      <%#= render @users %>
 	      <%#= link_to user.name, user %>
     </div>  

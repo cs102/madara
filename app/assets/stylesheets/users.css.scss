@@ -168,6 +168,32 @@ border-color: #5ca941;
 /* start: style buttons */
 
 .small {
-  text-transform: capitalize;
   font-size: 12px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.active {
+  border-radius: 50%;
+  background: green;
+  color: #1f79cd;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 0.5em;
+  margin-right: 5px;
+  text-align: center;
+  width: 0.5em; 
+}
+
+.not_active {
+  border-radius: 50%;
+  background: red;
+  color: #1f79cd;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 0.5em;
+  margin-right: 5px;
+  text-align: center;
+  width: 0.5em; 
 }

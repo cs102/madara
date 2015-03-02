@@ -16,18 +16,27 @@
 	</div>
 
 	<div class = "user-name">	    
-      <p><%= link_to user.name, user %>
+      <p>
+        <%= link_to user.name, user %>
       <%# if current_user.admin? && !current_user?(user) %>
-      
-      <% if current_user.try(:admin?) %>
+  
 
-         | <%= link_to "delete", user, method: :delete,
+      <% if current_user.try(:admin?) %>
+      | <%= link_to "delete", user, method: :delete,
                                       data: { confirm: "You sure?" } %>
+      <% if user.activated_at? %></p>
+          <span class ="active">&nbsp;</span>
+          <% else %>
+          <span class= "not_active">&nbsp;</span>
+          <% end %>
+
+         
       <p class = "small"> <%= user.email %></p>
-      <% end %>
-      </p>
       
-      <p class = "small">Joined: <%= user.created_at.strftime("%B %d, %Y - %I:%M %p ") %></p>
+  
+      <% end %>
+      
+      <p class = "small capitalize">Joined: <%= user.created_at.strftime("%B %d, %Y - %I:%M %p ") %></p>
       <p class = "small"> <%= pluralize(user.bookmarks.count, "bookmark") %> </p>
 
 	      <%#= render @users %>

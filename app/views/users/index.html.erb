@@ -23,10 +23,13 @@
 
          | <%= link_to "delete", user, method: :delete,
                                       data: { confirm: "You sure?" } %>
+      <p class = "small"> <%= user.email %></p>
       <% end %>
       </p>
-      <%= pluralize(user.bookmarks.count, "bookmark") %>
-      <p class = "date">Joined: <%= user.created_at.strftime("%B %d, %Y - %I:%M %p ") %></p>
+      
+      <p class = "small">Joined: <%= user.created_at.strftime("%B %d, %Y - %I:%M %p ") %></p>
+      <p class = "small"> <%= pluralize(user.bookmarks.count, "bookmark") %> </p>
+
 	      <%#= render @users %>
 	      <%#= link_to user.name, user %>
     </div>  

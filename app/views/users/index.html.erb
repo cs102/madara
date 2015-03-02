@@ -1,8 +1,13 @@
 <% provide(:title, 'All users') %>
 <%#= will_paginate %>
-
+  <% if @users.any? %>
+    <p> Users : <%= @users.count %></p>
+    <p> Activaded users: <%= @users.count %></p>
+  <% end %>
+  <br/>
 <% @users.each do |user| %>
 <div class ="all-users">
+
   <div class = "user-avatar">
  	    <% if user.avatar.mini.blank? %>
 	      <%= link_to (image_tag("github.png", class: "mini")), user %> 

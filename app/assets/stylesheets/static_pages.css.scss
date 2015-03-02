@@ -78,10 +78,11 @@ border-radius: 4px;
 .header {
   width:100%;margin-top:0px;margin-bottom:0px;
   height: 10px;
-  background-color: rgb(245, 245, 245);
+  background-color: #077cb3;
   border-bottom: 1px solid rgb(229, 229, 229);
+  /*
   background-image: asset-url("blue_bg.png");
-  
+  */
   padding-bottom:45px;
   margin-bottom:10px;
   border-top: 4px solid #40403f;
@@ -145,7 +146,7 @@ h1 {
   position: relative;
 display: inline-block;
 padding: 7px 12px;
-font-size: 13px;
+font-size: 15px;
 font-weight: bold;
 color: #333;
 text-shadow: 0 1px 0 rgba(255,255,255,0.9);
@@ -276,6 +277,18 @@ div.field, div.actions {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+
+.alert-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+}
+
+.alert-warning {
+  color: #B94A48;
+background-color: #F2DEDE;
+border-color: #EED3D7;
 }
 
 .alert-success {

@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
       # send email to verify email
       @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
+      flash[:info] = "Almost there, check your email to activate your account."
       redirect_to root_url
 
   	else

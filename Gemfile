@@ -15,6 +15,8 @@ gem 'redcarpet'
 gem 'nokogiri'
 ###### manage markdown and code highlighthing
 
+# gem 'open_uri_redirections'
+
 
 gem "carrierwave"
 gem 'puma'

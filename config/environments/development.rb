@@ -20,11 +20,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
-  port:                 587,
+  address:              'smtp.zoho.com',
+  port:                 465,
   domain:               'littlebookmarks.com',
-  user_name:            ENV["GMAIL_USERNAME_DEV"],
-  password:             ENV["GMAIL_PASSWORD_DEV"],
+  user_name:            ENV["ZOHO_USERNAME_PRO"],
+  password:             ENV["ZOHO_PASSWORD_PRO"],
   authentication:       'plain',
   enable_starttls_auto: true  }
 

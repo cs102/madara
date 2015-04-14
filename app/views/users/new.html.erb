@@ -5,16 +5,18 @@
 <br/>
 
 <%= form_for(@user) do |f| %>
-<%= render 'shared/error_messages', object: f.object %>
+  <%= render 'shared/error_messages', object: f.object %>
 
-<div class="field">
+  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name, :autofocus => true %>
   </div>
+  
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
+  
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>

@@ -1,7 +1,10 @@
 <div class="blog">
   <h2 class="lb-blog">Little Bookmarks Blog</h2>
     <% @posts.each do |post| %>
-      <p class ="post-title"><%= post.title %></p>
+      <p class ="post-title">
+        <%= link_to post.title, post %>
+        <%#= post.title %>
+      </p>
       <!--
 
       <p>Updated <%#= post.updated_by %></p>

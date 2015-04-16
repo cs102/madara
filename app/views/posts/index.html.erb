@@ -1,38 +1,27 @@
 <div class="blog">
   <h2 class="lb-blog">Little Bookmarks Blog</h2>
+    
+    <% if current_user.try(:admin?) %>
+      <%= link_to '+ New Post', new_post_path, :class => 'new-post' %>
+    <% end %>
+    
     <% @posts.each do |post| %>
       <p class ="post-title">
         <%= link_to post.title, post %>
-        <%#= post.title %>
       </p>
-      <!--
-
-      <p>Updated <%#= post.updated_by %></p>
-      -->
+   
       <span class = "bookmark-time">
         <%= post.created_at.strftime("%B %d, %Y") %>
       </span> 
-      <br/>
-      <br>
 
       <p class ="post-body"><%= post.post.html_safe %></p>
-      <p><%#= post.user_id %></p>
-        
-        <% if current_user.try(:admin?) %>
-          <span>
-          <%= link_to 'Show', post %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </span>
-        <% end %>
+       
+      <% if current_user.try(:admin?) %>
+        <%= link_to 'Show', post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
      
     <% end %>
 
-    <% if current_user.try(:admin?) %>
-<div class ="post">
- <%= link_to '+ New Post', new_post_path %>
-<% end %>
-</div>
-
-<br>
 </div>

@@ -35,13 +35,12 @@
   <br/>
   <br/>
   <h2>
-  <%= link_to "Join us Today", register_path, class: 'green oxigen' %> 
+  <%= link_to "Join Us Today", register_path, class: 'join-us' %> 
   </h2>
-	<p class= "oxigen">try us<%= link_to (image_tag('baby-boy-icon.png')), '#' %> Currently in Beta stage</p>
-	
-  <%#= image_tag("github.png") %>
-	<br/>
-	<p class ="oxigen">or  <%= link_to "Login to your account", login_path, class: 'login-link' %></p>
+  <br/>
+  <p> or </p>
+	<p class ="oxigen">  <%= link_to "Login to your account", login_path, class: 'login-link' %></p>
+  <br/>
 
 </div>
 <div class = "home_right">
@@ -51,16 +50,21 @@
     <%= f.label :name %><br />
     <%= f.text_field :name, :autofocus => true %>
   </div>
+  
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email %>
   </div>
+  
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>
   </div>
 
-  <%= f.submit "Create my account", class: "button create_account" %>
+  <div class ="field">
+    <%= f.submit "Create my account", class: "button create_account" %>
+  </div>
+
 <% end %>
 
 <% end %>

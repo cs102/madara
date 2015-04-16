@@ -39,7 +39,6 @@ border-radius: 4px;
 
 .home_left{
   background-image: asset-url("books.jpg");
-  background-repeat: no-repeat;
   float:left;
   width:600px;
   padding-left: 20px;
@@ -136,7 +135,6 @@ border-radius: 4px;
   text-decoration: none;
   color: #626262;
   font-weight: bold;
-  padding-bottom: 4em;
 }
 
 h1 {
@@ -243,7 +241,10 @@ margin-right: 114px;
 }
 
 .width {
-  width:76%; margin: 0 auto;
+  width:980px; margin: 0 auto;
+  padding-left: 0.5em;
+  //with for mobile version
+  //width:76%; margin: 0 auto;
 }
 
 .content {

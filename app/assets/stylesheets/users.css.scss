@@ -11,6 +11,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="url"],
+input[type="file"],
 input[type="date"],
 input[type="search"],
 select,
@@ -26,7 +27,9 @@ textarea {
     background-color: #fafafa;
 }
 
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus,
+input[type=checkbox]:focus,input[type=file]:focus,
+ {
   -moz-box-shadow: 0 0 5px #51cbee;
   -webkit-box-shadow: 0 0 5px #51cbee;
   box-shadow: 0 0 5px #51cbee;

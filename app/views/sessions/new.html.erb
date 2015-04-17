@@ -5,12 +5,9 @@
 <h1>Log in</h1>
 
 <%= form_for(:session, url: login_path) do |f| %>
-
-  <%= f.label :email %><br/>
-  <%= f.email_field :email, :autofocus => true %><br/>
-<br/>
-  <%= f.label :password %> <br/>
-  <%= f.password_field :password %><br/>
+  <%= f.email_field :email, :autofocus => true, :placeholder => 'email' %><br/>
+  <br/>
+  <%= f.password_field :password, :placeholder => 'password' %><br/>
 <br/>
 
 <%= f.label :remember_me, class: "checkbox inline" do %>
